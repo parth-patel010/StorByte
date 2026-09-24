@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: stroex
+      POSTGRES_PASSWORD: stroex
+      POSTGRES_DB: stroex
+    ports:
+      - "5432:5432"
+    volumes:
+      - stroex_pg:/var/lib/postgresql/data
+
+volumes:
+  stroex_pg:

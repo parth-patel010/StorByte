@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+dist/
+target/
+.env
+.env.local
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+
+# Built binaries / local packages
+*.exe
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/target-msvc/
+apps/desktop/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Go
+services/api/bin/
+services/api/*.exe
+*.exe~
+
+# Build / debug logs
+*.log
+cargo-check.log
+pacman-mingw.log
