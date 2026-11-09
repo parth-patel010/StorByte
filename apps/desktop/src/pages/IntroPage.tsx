@@ -50,7 +50,7 @@ function crescentSlots(count: number) {
     if (i === 0 || i === count - 1) rotate *= 0.55;
 
     let x = cx + radius * Math.cos(rad);
-    let y = cy - radius * Math.sin(rad);
+    const y = cy - radius * Math.sin(rad);
     if (i === 0 || i === count - 1) x += 6;
 
     const enterDeg = deg - 32;

@@ -123,18 +123,10 @@ export function IntroStepLogin({ onBack, onContinue, onDemoContinue }: Props) {
             </p>
           )}
 
-          <button
-            type="button"
-            className="mt-5 self-start border-0 bg-transparent p-0 text-[13px] text-[#3b7cff] underline-offset-2 hover:underline"
-          >
-            Already have a code?
-          </button>
         </div>
 
         <p className="text-[12px] text-[#9a9a9a]">
-          By continuing you agree to the{" "}
-          <span className="underline underline-offset-2">Terms</span> and{" "}
-          <span className="underline underline-offset-2">Privacy Policy</span>
+          By continuing you agree to Storbyte&apos;s terms and privacy policy.
         </p>
       </div>
 
