@@ -402,7 +402,7 @@ export function HomePage({
 
   useEffect(() => {
     let cancelled = false;
-    let unlisten: { current?: () => void } = {};
+    const unlisten: { current?: () => void } = {};
     void listen("drive-changed", () => {
       if (cancelled) return;
       cacheRef.current.clear();
