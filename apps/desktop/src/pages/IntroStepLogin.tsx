@@ -122,11 +122,10 @@ export function IntroStepLogin({ onBack, onContinue, onDemoContinue }: Props) {
               {error}
             </p>
           )}
-
         </div>
 
         <p className="text-[12px] text-[#9a9a9a]">
-          By continuing you agree to Storbyte&apos;s terms and privacy policy.
+          By continuing you agree to StorByte&apos;s terms and privacy policy.
         </p>
       </div>
 
