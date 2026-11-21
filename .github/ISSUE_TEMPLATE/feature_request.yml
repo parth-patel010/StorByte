@@ -1,0 +1,68 @@
+
+name: Feature Request
+description: Suggest an improvement or new feature for StorByte.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement!
+        Please explain the problem your idea would solve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem are you trying to solve?
+      placeholder: Describe the current limitation or need.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or improvement you would like.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions?
+
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: Related Area
+      options:
+        - Drive mounting
+        - Google OAuth / Account management
+        - File streaming
+        - File operations (rename / delete)
+        - SQLite metadata / Indexing
+        - Desktop UI / UX
+        - Auto-mount / Startup
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add examples, screenshots, or other relevant information.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues to avoid duplicates.
+          required: true
+        - label: This feature is related to StorByte.
+          required: true

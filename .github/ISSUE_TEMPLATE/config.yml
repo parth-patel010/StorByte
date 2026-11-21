@@ -1,0 +1,11 @@
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: StorByte Documentation
+    url: https://github.com/parth-patel010/StorByte/tree/main/docs
+    about: Check the documentation for setup instructions and troubleshooting.
+
+  - name: Contribution Guidelines
+    url: https://github.com/parth-patel010/StorByte/blob/main/CONTRIBUTING.md
+    about: Read the contribution guidelines before submitting changes.
