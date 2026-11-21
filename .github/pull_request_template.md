@@ -4,7 +4,7 @@
 
 ## Related Issue
 
-Closes #2
+<!-- If this PR addresses an issue, add its number here, e.g. Closes #123. -->
 
 ## Type of Change
 
