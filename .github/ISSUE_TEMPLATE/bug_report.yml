@@ -1,0 +1,115 @@
+
+name: Bug Report
+description: Report a bug or unexpected behavior in StorByte.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug!
+        Please provide enough details to help us reproduce and investigate the issue.
+        Do not include passwords, OAuth tokens, API keys, or other secrets.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: A clear and concise description of the bug.
+      placeholder: Describe the issue briefly.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows_version
+    attributes:
+      label: Windows Version
+      description: Which Windows version are you using?
+      options:
+        - Windows 11
+        - Windows 10
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: storbyte_version
+    attributes:
+      label: StorByte Version
+      description: Which StorByte version or build are you using?
+      placeholder: e.g. Latest build
+    validations:
+      required: true
+
+  - type: input
+    id: winfsp_version
+    attributes:
+      label: WinFsp Version
+      description: Which WinFsp version is installed?
+      placeholder: e.g. 2.x or Unknown
+
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: Affected Area
+      description: Which part of StorByte is affected?
+      options:
+        - Drive mounting
+        - Google OAuth / Account connection
+        - File streaming / HTTP Range reads
+        - File operations (rename / delete)
+        - SQLite metadata / Indexing
+        - Desktop UI
+        - Auto-mount / Startup
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide clear steps to reproduce the issue.
+      placeholder: |
+        1. Open StorByte.
+        2. Connect a Google Drive account.
+        3. Try to mount the virtual drive.
+        4. Observe the issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages / Logs
+      description: Paste relevant error messages or logs. Remove all secrets and personal information.
+      render: text
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues to avoid duplicates.
+          required: true
+        - label: I am using a supported Windows version (10/11), or have specified otherwise.
+          required: true
+        - label: I have removed passwords, OAuth tokens, and other secrets from this report.
+          required: true
