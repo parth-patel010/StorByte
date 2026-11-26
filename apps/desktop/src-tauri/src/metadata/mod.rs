@@ -9,6 +9,9 @@ use std::time::Instant;
 use crate::config::data_dir;
 use crate::providers::{RemoteEntry, StorageProvider};
 
+#[cfg(test)]
+mod tests;
+
 /// Live metadata sync progress for the UI (percent + ETA).
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
 pub struct SyncProgress {
