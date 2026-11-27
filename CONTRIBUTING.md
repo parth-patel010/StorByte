@@ -33,9 +33,12 @@ You need WinFsp + MSVC Rust (`stable-x86_64-pc-windows-msvc`).
 4. Describe **what** and **why** in the PR body; include repro steps for bugfixes
 5. If you touch streaming/cache behavior, note any expected performance tradeoffs
 
-## Code of conduct
+## Code of Conduct & Security
 
-Be respectful. Assume good intent. Harassment or spam will not be tolerated.
+- Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) when participating in this project.
+- To report security vulnerabilities privately, please review our [Security Policy](SECURITY.md).
+
+
 
 ## License
 

@@ -95,6 +95,7 @@ Health: `GET http://localhost:8080/health`
 - Refresh tokens live in **Windows Credential Manager**
 - File bytes travel **User PC ↔ Google Drive** only — the optional API must not proxy normal file data
 - Do **not** commit `.env` (gitignored). Rotate any secret that was ever committed
+-For reporting security vulnerabilities privately, see [SECURITY.md](SECURITY.md). Please also review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ## Contributing
 
